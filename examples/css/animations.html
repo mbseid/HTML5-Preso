@@ -1,7 +1,7 @@
 <html>
 <head>
 	<style>
-	@-webkit-keyframes pulse {
+	@-moz-keyframes pulse {
 	  from {
 	    opacity: 0.0;
 	    font-size: 100%;
@@ -12,7 +12,7 @@
 	  }
 	}
 	
-	@-webkit-keyframes roll {
+	@-moz-keyframes roll {
 		from {
 			left:0;
 		    -moz-transform: rotate(0deg);
@@ -26,11 +26,11 @@
 	 	}
 	}
 	#content {
-	  -webkit-animation-name: pulse; /* name of the keyframe */
-	  -webkit-animation-duration: 2s;
-	  -webkit-animation-iteration-count: infinite;
-	  -webkit-animation-timing-function: ease-in-out; /* linear, ease, ease-in, ease-out, ease-in-out,cubic-bezier */
-	  -webkit-animation-direction: alternate; /* This is what happens after each cycle */
+	  -moz-animation-name: pulse; /* name of the keyframe */
+	  -moz-animation-duration: 2s;
+	  -moz-animation-iteration-count: infinite;
+	  -moz-animation-timing-function: ease-in-out; /* linear, ease, ease-in, ease-out, ease-in-out,cubic-bezier */
+	  -moz-animation-direction: alternate; /* This is what happens after each cycle */
 	}
 		
 	#playButton {
@@ -47,9 +47,9 @@
 		
 	}
 	#logo.active{
-		-webkit-animation-name: roll;
-		-webkit-animation-duration: 10s;
-		-webkit-animation-iteration-count: 1;
+		-moz-animation-name: roll;
+		-moz-animation-duration: 10s;
+		-moz-animation-iteration-count: 1;
 	}
 	</style>
 	<script>
