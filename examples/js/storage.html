@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h1>JS localStorage</h1>
+	<br>
+    <div id="content">
+    	<p>
+			<em>Enter text bellow and it will be saved even though you reload! Sweet right!</em>
+		</p>
+    </div>
+	<textarea id="textInput" style="width:300px; height:150px;"></textarea>
+	
+	<p id="log" style="color: gray"></p>
+</body>
+<script>
+  // Generate the little markup from javascript
+ var area = document.getElementById("textInput");
+  
+  // place content from previous edit
+  if (!area.value) {
+    area.value = window.localStorage.getItem('value');
+  }
+   
+  // your content will be saved locally
+  area.addEventListener('keyup', function () {
+    window.localStorage.setItem('value', area.value);
+    window.localStorage.setItem('timestamp', (new Date()).getTime());
+  }, false);
+  
+  updateLog();
+  setInterval(updateLog, 5000); // show time every 5 seconds
+  
+  function updateLog() {
+    var delta = 0;
+    if (window.localStorage.getItem('value')) {
+      delta = ((new Date()).getTime() - (new Date()).setTime(window.localStorage.getItem('timestamp'))) / 1000;
+      document.querySelector("#log").innerHTML = 'last saved: ' + delta + 's ago';
+    } 
+    else {
+      area.value = 'Type your text here...';
+    }
+  }
+</script>
+</html>

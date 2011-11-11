@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>HTML5: Wait, What?</title>
+	
+	<meta name="description" content="A simple exposure to the hot new features of HTML5(which isn't really html...)">
+	<meta name="author" content="Michael Seid">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="assets/deck/core/deck.core.css">
+	<link rel="stylesheet" href="assets/deck/extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="assets/deck/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="assets/deck/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="assets/deck/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="assets/deck/extensions/hash/deck.hash.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="assets/deck/themes/style/web-2.0.css">
+	<link rel="stylesheet" id="transition-theme-link" href="assets/deck/themes/transition/horizontal-slide.css">
+	
+	<!-- Custom CSS just for this page -->
+	<link rel="stylesheet" href="assets/css/preso.css">
+	
+	<script src="assets/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<section class="slide" id="title-slide">
+	<h1>HTML5</h1>
+	<h2 class="sub-h1">Wait, What?</h2>
+</section>
+<section class="slide" id="who-am-i">
+	<h2>Who Am I?</h2>
+	<ul>
+		<li>
+			<h3>Michael Seid</h3>
+			<h4>Senior Consultant<h4>
+			<p>Joined the firm in August '10. Love every minute of it.</p>
+		</li>
+		<li>
+			<h3>Passionate Web Developer<h3>
+			<h4>Specializing in ColdFusion, HTML, JS, Flex and CSS(Kinda)<h4>
+		</li>
+		<li>
+			<h3>University of Rochester</h3>
+			<h4>BS in Computer Science, Systems - Class of 2010<h4>
+		</li>
+		<li>
+			<h3>For Fun:</h3>
+			<h4>Hockey, Scuba Dive, Failed Beer Brewer<h4>
+		</li>
+			
+	<ul>
+</section>
+
+<section class="slide" id="html5-overview">
+	<img src="/assets/images/blank.gif" width="75" height="75" alt="Blank">
+	<img src="/assets/images/HTML5-LOGO.jpg" width="550" height="400" alt="HTML5 LOGO">
+	<h1 style="top:80%">So what is it?</h1>
+</section>
+
+<section class="slide" id="html-badges">
+	<img src="/assets/images/blank.gif" width="75" height="30" alt="Blank">
+	<img src="/assets/images/html5logo.jpg" width="400" height="250" alt="Html5logo">
+	<img src="/assets/images/html5logos.jpg" width="400" height="250" alt="Html5logos">
+	<p><a href="http://www.w3.org/html/logo/">Source</a></p>
+</section>
+
+<section class="slide" id="today">
+	<h2>What will we be doing today?</h2>
+	<h6>Basic overview of a few my favorite new features</h6>
+	<ul>
+		<li>
+			<h3>CSS</h3>
+			<h4>Animations, Selectors, and Web Fonts</h4>
+		
+		</li>
+		<li>
+			<h3>Javascript<h3>
+			<h4>Web Storage, Native Drag and Drop and Notifications</h4>
+		</li>
+		<li>
+			<h3>HTML</h3>
+			<h4>Canvas, SVG, Video</h4>
+		</li>
+	</ul>
+</section>
+
+
+
+<section class="slide" id="css">
+	<img src="/assets/images/blank.gif" width="75" height="75" alt="Blank">
+	
+	<img src="/assets/images/css3logo.jpg" width="150" height="150" alt="Css3logo">
+	<h1>Lets Start with CSS3</h1>
+</section>
+<section class="slide" id="css-selectors">
+	<h2>CSS3 Selectors!</h2>
+	<ul>
+		<li>
+			<h4>Allows CSS to reference only certain elements with the same names</h4>
+		</li>
+		<li>
+			<h4>Generally signified with a : after the name.</h4>
+		</li>
+		<li>
+			<a href="/examples/css/selectors.html#chrome" target="_blank">Take me to the demo!</a>
+		</li>
+	</ul>
+</section>
+<section class="slide" id="css-animations">
+	<h2>CSS3 Animations!</h2>
+	<ul>
+		<li>
+			<a href="/examples/css/animations.html" target="_blank">Take me to the demo!</a>
+		</li>
+	</ul>
+	<iframe src="http://www.webkit.org/blog-files/leaves/" style="width:600px; height:450px;"></iframe>
+</section>
+<section class="slide" id="css-webfonts">
+	<h2>CSS3 Web fonts!</h2>
+	<ul>
+		<li>
+			<h4>Allows the developer to Embed his own custom font styles</h4>
+		</li>
+		<li>
+			<h4>Can create their own font sets to include fun things like wing dings</h4>
+			<p>We all love those wing dings right</p>
+		</li>
+		<li>
+			<a href="/examples/css/fonts.html" target="_blank">Take me to the demo!</a>
+		</li>
+	</ul>
+</section>
+
+
+
+<section class="slide" id="js">
+	<h1>Javascript</h1>
+</section>
+<section class="slide" id="js-webstorage">
+	<h2>JavaScript Web Storage</h2>
+	<ul>
+		<li>
+			<h4>Allows use of a local "db" like data manager to hold data for you while the user is away</h4>
+		</li>
+		<li>
+			<h4>Three types of DB</h4>
+			<h5>Local Storage, Web SQL DB, Indexed DB</h5>
+		</li>
+		<li>
+			<a href="/examples/css/fonts.html" target="_blank">Take me to the demo!</a>
+		</li>
+	</ul>
+</section>
+<section class="slide" id="js-dragdrop">
+	<h2>JavaScript Native Drag and Drop</h2>
+	<ul>
+		<li>
+			<h4>Allows the developer to Embed his own custom font styles</h4>
+		</li>
+		<li>
+			<h4>Very Javascript heavy, but allows for amazing things</h4>
+			<p>This is definitely not a magical feature</p>
+		</li>
+		<li>
+			<a href="/examples/js/fonts.html" target="_blank">Take me to the demo!</a>
+		</li>
+	</ul>
+</section>
+<section class="slide" id="js-notifications">
+	<h2>JavaScript Native Web Notifications</h2>
+	<ul>
+		<li>
+			<h4>Only implemented in Chrome</h4>
+		</li>
+		<li>
+			<h4>Gives you access to the a sweet Growl like notification</h4>
+		</li>
+		<li>
+			<h4>Perfectly customizable, can embed html in the notification</h4>
+		</li>
+		<li>
+			<a href="/examples/js/notifications.html" target="_blank">Take me to the demo!</a>
+		</li>
+	</ul>
+</section>
+
+
+
+<section class="slide" id="html5">
+	<h1>HTML</h1>
+</section>
+<section class="slide" id="html5-canvas">
+	<h2>HTML5 Canvas</h2>
+	<ul
+		<li>
+			<a href="/examples/html/canvas.html" target="_blank">Take me to the demo!</a>
+		</li>
+		<iframe src="http://onecm.com/projects/canopy/" style="height:400px; width:750px;"></iframe>
+	</ul>
+</section>
+<section class="slide" id="html5-svg">
+	<h2>HTML SVGS</h2>
+	<ul>
+		<li>
+			<h4>Gives the developer an ability to draw images using paths and shapes</h4>
+		</li>
+		<li>
+			<h4>Reduces the amount of pictures needed for the design of your page</h4>
+			<p>Less Pictures, Faster Site</p>
+		</li>
+		<li>
+			<a href="/examples/html/svg.html" target="_blank">Take me to the demo!</a>
+		</li>
+	</ul>
+</section>
+<section class="slide" id="html5-video">
+	<h2>HTML5 Video</h2>
+	<ul>
+		<li>No description needed!</li>
+		<li>
+			<a href="" target="_blank">Take me to the demo!</a>
+		</li>
+	</ul>
+	<iframe src="/examples/html/video.html" style="height:400px; width:600px;"></iframe>
+</section>
+
+<section class="slide" id="quick-notes">
+	<h2>A few things to remember</h2>
+	<ul>
+		<li>
+			<h4>Everything is 100% Implemented in all the browsers</h4>
+			<p>Check out this handy website to see the compatibilities</p>
+			<a href="http://caniuse.com/#">caniuse.com</a>
+		</li>
+		<li>
+			<h4>Make sure to have all your effects written for each browser</h4>
+			<p>webkit, moz, konq, o</p>
+			<p>And of course Microsoft makes everything hard: &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;</p>
+		</li>
+	</ul>
+</section>
+
+
+
+
+<section class="slide" id="credits">
+	<h2>Credits</h2>
+	<ul>
+		<li>
+			<h4>Deck.js</h4>
+			<a herf="http://imakewebthings.github.com/deck.js/">Link</a>
+		</li>
+		<li>
+			<h4>W3.org</h4>
+			<a herf="http://www.w3.org/html/logo/">Link</a>
+		</li>
+		<li>
+			<h4>Canopy Demo</h4>
+			<a herf="http://onecm.com/projects/canopy/">Link</a>
+		</li>
+		<li>
+			<h4>HTML Canvas Demo</h4>
+			<a herf="http://dev.opera.com/articles/view/html5-canvas-painting/">Link</a>
+		</li>
+	</ul>
+</section>
+
+<section class="slide" id="thanks">
+	<h1>Thanks!</h1>
+</section>
+
+<section class="slide" id="contact">
+	<h2>Michael B Seid</h2>
+	<h2>seid_michael@bah.com</h2>
+	<h2>@mbseid</h2>
+</section>
+
+
+<div class="bottom-left">
+	<a href="http://www.w3.org/html/logo/">
+	<img src="http://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-device-graphics-multimedia-performance-semantics-storage.png" width="268" height="48" alt="HTML5 Powered with Connectivity / Realtime, CSS3 / Styling, Device Access, Graphics, 3D &amp; Effects, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage" title="HTML5 Powered with Connectivity / Realtime, CSS3 / Styling, Device Access, Graphics, 3D &amp; Effects, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage">
+	</a>
+</div>
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+
+  <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="assets/deck/core/deck.core.js"></script>
+<script src="assets/deck/extensions/hash/deck.hash.js"></script>
+<script src="assets/deck/extensions/menu/deck.menu.js"></script>
+<script src="assets/deck/extensions/goto/deck.goto.js"></script>
+<script src="assets/deck/extensions/status/deck.status.js"></script>
+<script src="assets/deck/extensions/navigation/deck.navigation.js"></script>
+
+<!-- Specific to this page -->
+<script src="assets/js/preso.js"></script>
+
+</body>
+</html>

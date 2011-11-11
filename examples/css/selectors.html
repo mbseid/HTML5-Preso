@@ -1,0 +1,129 @@
+<html>
+<head>
+	<style>
+	#rolloverButton{
+		background-color:blue;
+		margin: 20px;
+		padding:20px;
+		color:white;
+	}
+	#rolloverButton:hover{
+		background-color:green;
+	}
+	
+	div.tabbed {
+	    margin-top: 40px;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	div.tabs a {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: smaller;
+		color: #e0e0e0;
+		background-color: #404040;
+	    border: thin solid black;
+	    margin-right: 2px;
+	    padding: 0px 2px;
+	    -moz-border-radius: 5px 5px 0px 0px;
+	}
+
+	div.tab {
+	    display: none;
+	    height: 250px;
+	    border: thin solid black;
+	    -moz-border-radius: 0px 0px 5px 5px;
+	    text-align: center;
+	}
+
+	div.tab:target {
+	    display: block;
+	}
+
+	:target div.tab {
+	    display: block;
+	}
+	:target div.tab + div.tab{
+	    display: none;
+	}
+
+
+	td {
+		width: 60px;
+		color:white;
+	}
+	tr:nth-child(odd)
+	{
+		background-color:red;
+	}
+	tr:nth-child(even) /*an + b */
+	{
+		background-color:blue;
+	}
+	</style>
+	<script>
+	
+	</script>
+	
+</head>
+<body>
+	<h1>CSS Selectors</h1>
+	<br>
+	<br>
+	<a id="rolloverButton">Sweet Rollover Button</a>
+	<br>
+	<br>
+	<div>
+		<div class="tabbed">
+		<div class="tabs"><a href="#chrome">Chrome</a><a href="#mozilla">Mozilla</a><a href="#ie">IE</a><a href="#safari">Safari</a></div>
+		<div id="chrome" class="tab">
+		    <p>Chrome</p>
+			<img src="/assets/images/Chrome-logo-2011-03-16.jpg" width="150" height="150" alt="Chrome Logo 2011 03 16">
+		  </div>
+		<div id="mozilla" class="tab">
+		    <p>Mozilla</p>
+		    <img src="/assets/images/Firefox.jpg" width="150" height="150" alt="Firefox">
+		  </div>
+		<div id="ie" class="tab">
+		    <p>IE</p>
+		    <img src="/assets/images/ie-logo.png" width="150" height="150" alt="Ie Logo">
+		  </div>
+		<div id="safari" class="tab">
+		    <p>Safari</p>
+		    <img src="/assets/images/safari-logo-lg.png" width="150" height="150" alt="Safari Logo Lg">
+		  </div>
+		</div>
+	</div>
+	
+	<br>
+	<h3>Grid of Awsomeness</h3>
+	<table border="1">
+		<tr>
+			<td>Apple</td>
+			<td>Fruit</td>
+			<td>Yum</td>
+		</tr>
+		<tr>
+			<td>Banana</td>
+			<td>Fruit</td>
+			<td>Yum</td>
+		</tr>
+		<tr>
+			<td>Lettuce</td>
+			<td>Veggy</td>
+			<td>Yuck</td>
+		</tr>
+		<tr>
+			<td>Cucumber</td>
+			<td>Veggy</td>
+			<td>Yum</td>
+		</tr>
+		<tr>
+			<td>Grapes</td>
+			<td>Fruit</td>
+			<td>The Best!</td>
+		</tr>
+		
+	</table>
+</body>
+</html>

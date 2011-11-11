@@ -1,0 +1,75 @@
+<html>
+<head>
+	<style>
+	@-webkit-keyframes pulse {
+	  from {
+	    opacity: 0.0;
+	    font-size: 100%;
+	  }
+	  to {
+	    opacity: 1.0;
+	    font-size: 200%;
+	  }
+	}
+	
+	@-webkit-keyframes roll {
+		from {
+			left:0;
+		    -moz-transform: rotate(0deg);
+		}
+		50% {
+			-moz-transform: rotate(360deg);
+		}
+		to { 
+			left:250;
+		    -moz-transform: rotate(720deg);
+	 	}
+	}
+	#content {
+	  -webkit-animation-name: pulse; /* name of the keyframe */
+	  -webkit-animation-duration: 2s;
+	  -webkit-animation-iteration-count: infinite;
+	  -webkit-animation-timing-function: ease-in-out; /* linear, ease, ease-in, ease-out, ease-in-out,cubic-bezier */
+	  -webkit-animation-direction: alternate; /* This is what happens after each cycle */
+	}
+		
+	#playButton {
+		position: absolute;
+		top: 300px;
+	}
+	#path {
+		position: absolute;
+		top: 400px;
+		width:500px;
+	}
+	#logo{
+		position: relative;
+		
+	}
+	#logo.active{
+		-webkit-animation-name: roll;
+		-webkit-animation-duration: 10s;
+		-webkit-animation-iteration-count: 1;
+	}
+	</style>
+	<script>
+		function roll(){
+			document.getElementById("logo").className = "active";
+		}
+	</script>
+	
+</head>
+<body>
+	<h1>CSS Animations</h1>
+	
+	<br>
+	<div id="content">Welcome to the WDC!</div>
+
+	<a id="playButton" href="javascript:roll();"><h2>Click Me!</h2></a>
+	<div id="path">
+		<div id="logo">
+			<img src="/assets/images/booz_allen_hamilton.png" width="235" height="70" alt="Booz Allen Hamilton">
+		</div>
+	</div>
+</body>
+</html>

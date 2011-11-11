@@ -1,0 +1,40 @@
+<html>
+<body>
+<p>  
+  <button id="request_permission" href="#">Set notification permissions for this page</button> 
+  <span>Note: Use this button if you also want to <em>reset</em> the permissions</span> 
+</p> 
+
+<div>
+  <button id="show_notification">Show Notification</button>
+  <button id="show_delayed_notification">Show Notification after 5 seconds</button>  
+</div>
+<script>
+  document.getElementById('request_permission').addEventListener('click', function() {
+    window.webkitNotifications.requestPermission();
+  }, false);
+  
+  document.getElementById('show_notification').addEventListener('click', function() {
+    showNotification();
+  }, false);
+  
+  document.getElementById('show_delayed_notification').addEventListener('click', function() {
+    setTimeout(function() { showNotification(); }, 5000);
+  }, false);
+  
+  function showNotification() {
+    var text = 'Sweet, we just got an awesome native notification through the desktop!';
+	//always check and make sure it is not undefined!
+	if(window.webkitNotifications == undefined){
+		return;
+	}
+    if (window.webkitNotifications.checkPermission() == 0) {
+      // note the show()
+      window.webkitNotifications.createNotification('', 'Plain Text Notification', text).show(); 
+    } else {
+      alert('You have to click on "Set notification permissions for this page" first to be able to receive notifications.');
+    }  
+  }
+</script>
+</body>
+</html>
